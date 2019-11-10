@@ -21,18 +21,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataArray = @[
-        @{@"title": @"简单的列表", @"class": @"SimpleListViewController"},
-        @{@"title": @"一个group多个item", @"class": @"MultiCellViewController"},
-        @{@"title": @"截然不同的section", @"class": @"DistinctSectionsViewController"},
-        @{@"title": @"badge", @"class": @"BadgeViewController"}
+        @{@"sectionTitle": @"基本使用", @"classes": @[
+            @{@"title": @"简单的列表", @"class": @"SimpleListViewController"},
+            @{@"title": @"一个group多个item", @"class": @"MultiCellViewController"},
+            @{@"title": @"截然不同的section", @"class": @"DistinctSectionsViewController"},
+        ]},
+        @{@"sectionTitle": @"Supplementary view(补充视图)", @"classes": @[
+            @{@"title": @"badge", @"class": @"BadgeViewController"},
+            @{@"title": @"header footer", @"class": @"HeaderFooterViewController"}
+        ]},
     ];
     [self setupUI];
 }
 
 #pragma mark - UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.dataArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSDictionary *sectionDic = self.dataArray[section];
+    return [sectionDic[@"classes"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -41,16 +51,22 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    NSDictionary *dic = self.dataArray[indexPath.row];
-    cell.textLabel.text = dic[@"title"];
+    NSDictionary *sectionDic = self.dataArray[indexPath.section];
+    cell.textLabel.text = sectionDic[@"classes"][indexPath.row][@"title"];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSDictionary *sectionDic = self.dataArray[section];
+    return sectionDic[@"sectionTitle"];
 }
 
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSDictionary *dic = self.dataArray[indexPath.row];
+    NSDictionary *sectionDic = self.dataArray[indexPath.section];
+    NSDictionary *dic = sectionDic[@"classes"][indexPath.row];
     Class cls = NSClassFromString(dic[@"class"]);
     id obj = [[cls alloc] init];
     [obj setTitle:dic[@"title"]];
@@ -61,7 +77,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.tableFooterView = [UIView new];

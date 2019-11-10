@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2326218E2377AFB500104B57 /* HeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2326218D2377AFB500104B57 /* HeaderFooterViewController.m */; };
+		232621932377B01E00104B57 /* HeaderFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 232621912377B01E00104B57 /* HeaderFooterCollectionReusableView.m */; };
+		232621942377B01E00104B57 /* HeaderFooterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232621922377B01E00104B57 /* HeaderFooterCollectionReusableView.xib */; };
 		233850152376707A002F0F27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 233850142376707A002F0F27 /* AppDelegate.m */; };
 		233850182376707A002F0F27 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 233850172376707A002F0F27 /* SceneDelegate.m */; };
 		2338501B2376707A002F0F27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338501A2376707A002F0F27 /* ViewController.m */; };
@@ -39,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2326218C2377AFB500104B57 /* HeaderFooterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFooterViewController.h; sourceTree = "<group>"; };
+		2326218D2377AFB500104B57 /* HeaderFooterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterViewController.m; sourceTree = "<group>"; };
+		232621902377B01E00104B57 /* HeaderFooterCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFooterCollectionReusableView.h; sourceTree = "<group>"; };
+		232621912377B01E00104B57 /* HeaderFooterCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterCollectionReusableView.m; sourceTree = "<group>"; };
+		232621922377B01E00104B57 /* HeaderFooterCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderFooterCollectionReusableView.xib; sourceTree = "<group>"; };
 		233850102376707A002F0F27 /* UICollectionViewDemo-iOS 13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionViewDemo-iOS 13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233850132376707A002F0F27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		233850142376707A002F0F27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +117,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2326218F2377AFBF00104B57 /* HeaderAndFooter */ = {
+			isa = PBXGroup;
+			children = (
+				2326218C2377AFB500104B57 /* HeaderFooterViewController.h */,
+				2326218D2377AFB500104B57 /* HeaderFooterViewController.m */,
+				232621902377B01E00104B57 /* HeaderFooterCollectionReusableView.h */,
+				232621912377B01E00104B57 /* HeaderFooterCollectionReusableView.m */,
+				232621922377B01E00104B57 /* HeaderFooterCollectionReusableView.xib */,
+			);
+			path = HeaderAndFooter;
+			sourceTree = "<group>";
+		};
 		233850072376707A002F0F27 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +157,7 @@
 				2338501A2376707A002F0F27 /* ViewController.m */,
 				233850562376902E002F0F27 /* BaseViewController.h */,
 				233850572376902E002F0F27 /* BaseViewController.m */,
+				2326218F2377AFBF00104B57 /* HeaderAndFooter */,
 				233850712376ABBC002F0F27 /* Badge */,
 				2338506D2376A2FA002F0F27 /* DistinctSections */,
 				23385061237699F4002F0F27 /* MultiCell */,
@@ -286,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2338505123768DFF002F0F27 /* Info.plist in Resources */,
+				232621942377B01E00104B57 /* HeaderFooterCollectionReusableView.xib in Resources */,
 				2338505D237694E3002F0F27 /* SimpleListCollectionViewCell.xib in Resources */,
 				233850232376707C002F0F27 /* LaunchScreen.storyboard in Resources */,
 				233850202376707C002F0F27 /* Assets.xcassets in Resources */,
@@ -303,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2338505C237694E3002F0F27 /* SimpleListCollectionViewCell.m in Sources */,
+				232621932377B01E00104B57 /* HeaderFooterCollectionReusableView.m in Sources */,
 				2338504F23768DFF002F0F27 /* MASViewConstraint.m in Sources */,
 				233850702376ABA7002F0F27 /* BadgeViewController.m in Sources */,
 				23385060237699EE002F0F27 /* MultiCellViewController.m in Sources */,
@@ -313,6 +336,7 @@
 				2338504C23768DFF002F0F27 /* NSArray+MASAdditions.m in Sources */,
 				2338506C2376A2EA002F0F27 /* DistinctSectionsViewController.m in Sources */,
 				2338504823768DFF002F0F27 /* ViewController+MASAdditions.m in Sources */,
+				2326218E2377AFB500104B57 /* HeaderFooterViewController.m in Sources */,
 				233850752376B277002F0F27 /* BadgeCollectionReusableView.m in Sources */,
 				2338504923768DFF002F0F27 /* MASCompositeConstraint.m in Sources */,
 				233850262376707C002F0F27 /* main.m in Sources */,
