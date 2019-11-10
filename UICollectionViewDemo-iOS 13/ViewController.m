@@ -30,6 +30,9 @@
             @{@"title": @"badge", @"class": @"BadgeViewController"},
             @{@"title": @"header footer", @"class": @"HeaderFooterViewController"}
         ]},
+        @{@"sectionTitle": @"Decoration view(装饰视图)", @"classes": @[
+            @{@"title": @"decoration background", @"class": @"DecorateViewController"},
+        ]},
     ];
     [self setupUI];
 }
