@@ -35,7 +35,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SimpleListCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SimpleListCollectionViewCell class]) forIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"%ld-%ld", indexPath.section, indexPath.item];
-    cell.contentView.backgroundColor = indexPath.item % 2 == 0 ? [UIColor redColor] : [UIColor greenColor];
+    cell.contentView.backgroundColor = indexPath.item % 2 == 0 ? [UIColor systemRedColor] : [UIColor systemGreenColor];
     return cell;
 }
 

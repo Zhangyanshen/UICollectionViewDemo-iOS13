@@ -50,7 +50,7 @@
     if (indexPath.section == 0) {
         SimpleListCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SimpleListCollectionViewCell class]) forIndexPath:indexPath];
         cell.textLabel.text = [NSString stringWithFormat:@"%ld-%ld", indexPath.section, indexPath.item];
-        cell.contentView.backgroundColor = indexPath.item % 2 == 0 ? [UIColor greenColor] : [UIColor redColor];
+        cell.contentView.backgroundColor = indexPath.item % 2 == 0 ? [UIColor systemRedColor] : [UIColor systemGreenColor];
         return cell;
     }
     MultiCellCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([MultiCellCollectionViewCell class]) forIndexPath:indexPath];

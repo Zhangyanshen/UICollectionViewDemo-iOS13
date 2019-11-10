@@ -33,6 +33,10 @@
         @{@"sectionTitle": @"Decoration view(装饰视图)", @"classes": @[
             @{@"title": @"decoration background", @"class": @"DecorateViewController"},
         ]},
+        @{@"sectionTitle": @"复杂视图", @"classes": @[
+            @{@"title": @"Nested group", @"class": @"NestedGroupViewController"},
+            @{@"title": @"Nested Collection View", @"class": @"NestedCollectionViewController"},
+        ]},
     ];
     [self setupUI];
 }

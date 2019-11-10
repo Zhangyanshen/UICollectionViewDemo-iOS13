@@ -10,6 +10,7 @@
 		23250DAD2377B7B600BDBC60 /* DecorateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23250DAC2377B7B600BDBC60 /* DecorateViewController.m */; };
 		23250DB22377BC1400BDBC60 /* DecorateCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23250DB02377BC1400BDBC60 /* DecorateCollectionReusableView.m */; };
 		23250DB32377BC1400BDBC60 /* DecorateCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23250DB12377BC1400BDBC60 /* DecorateCollectionReusableView.xib */; };
+		23250DB62377C07400BDBC60 /* NestedGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23250DB52377C07400BDBC60 /* NestedGroupViewController.m */; };
 		2326218E2377AFB500104B57 /* HeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2326218D2377AFB500104B57 /* HeaderFooterViewController.m */; };
 		232621932377B01E00104B57 /* HeaderFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 232621912377B01E00104B57 /* HeaderFooterCollectionReusableView.m */; };
 		232621942377B01E00104B57 /* HeaderFooterCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232621922377B01E00104B57 /* HeaderFooterCollectionReusableView.xib */; };
@@ -42,6 +43,7 @@
 		233850702376ABA7002F0F27 /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338506F2376ABA7002F0F27 /* BadgeViewController.m */; };
 		233850752376B277002F0F27 /* BadgeCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 233850732376B277002F0F27 /* BadgeCollectionReusableView.m */; };
 		233850762376B277002F0F27 /* BadgeCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233850742376B277002F0F27 /* BadgeCollectionReusableView.xib */; };
+		23B6FB142377DAFC004772A5 /* NestedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B6FB132377DAFC004772A5 /* NestedCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		23250DAF2377BC1400BDBC60 /* DecorateCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecorateCollectionReusableView.h; sourceTree = "<group>"; };
 		23250DB02377BC1400BDBC60 /* DecorateCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecorateCollectionReusableView.m; sourceTree = "<group>"; };
 		23250DB12377BC1400BDBC60 /* DecorateCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecorateCollectionReusableView.xib; sourceTree = "<group>"; };
+		23250DB42377C07400BDBC60 /* NestedGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedGroupViewController.h; sourceTree = "<group>"; };
+		23250DB52377C07400BDBC60 /* NestedGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedGroupViewController.m; sourceTree = "<group>"; };
 		2326218C2377AFB500104B57 /* HeaderFooterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFooterViewController.h; sourceTree = "<group>"; };
 		2326218D2377AFB500104B57 /* HeaderFooterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterViewController.m; sourceTree = "<group>"; };
 		232621902377B01E00104B57 /* HeaderFooterCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFooterCollectionReusableView.h; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		233850722376B277002F0F27 /* BadgeCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeCollectionReusableView.h; sourceTree = "<group>"; };
 		233850732376B277002F0F27 /* BadgeCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeCollectionReusableView.m; sourceTree = "<group>"; };
 		233850742376B277002F0F27 /* BadgeCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeCollectionReusableView.xib; sourceTree = "<group>"; };
+		23B6FB122377DAFC004772A5 /* NestedCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedCollectionViewController.h; sourceTree = "<group>"; };
+		23B6FB132377DAFC004772A5 /* NestedCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,17 @@
 				23250DB12377BC1400BDBC60 /* DecorateCollectionReusableView.xib */,
 			);
 			path = DecorateView;
+			sourceTree = "<group>";
+		};
+		23250DB72377C0DC00BDBC60 /* Nested */ = {
+			isa = PBXGroup;
+			children = (
+				23250DB42377C07400BDBC60 /* NestedGroupViewController.h */,
+				23250DB52377C07400BDBC60 /* NestedGroupViewController.m */,
+				23B6FB122377DAFC004772A5 /* NestedCollectionViewController.h */,
+				23B6FB132377DAFC004772A5 /* NestedCollectionViewController.m */,
+			);
+			path = Nested;
 			sourceTree = "<group>";
 		};
 		2326218F2377AFBF00104B57 /* HeaderAndFooter */ = {
@@ -177,6 +194,7 @@
 				2338501A2376707A002F0F27 /* ViewController.m */,
 				233850562376902E002F0F27 /* BaseViewController.h */,
 				233850572376902E002F0F27 /* BaseViewController.m */,
+				23250DB72377C0DC00BDBC60 /* Nested */,
 				23250DAE2377B7D200BDBC60 /* DecorateView */,
 				2326218F2377AFBF00104B57 /* HeaderAndFooter */,
 				233850712376ABBC002F0F27 /* Badge */,
@@ -350,6 +368,7 @@
 				232621932377B01E00104B57 /* HeaderFooterCollectionReusableView.m in Sources */,
 				2338504F23768DFF002F0F27 /* MASViewConstraint.m in Sources */,
 				233850702376ABA7002F0F27 /* BadgeViewController.m in Sources */,
+				23250DB62377C07400BDBC60 /* NestedGroupViewController.m in Sources */,
 				23385060237699EE002F0F27 /* MultiCellViewController.m in Sources */,
 				23250DAD2377B7B600BDBC60 /* DecorateViewController.m in Sources */,
 				2338505023768DFF002F0F27 /* MASViewAttribute.m in Sources */,
@@ -367,6 +386,7 @@
 				2338506823769BD2002F0F27 /* MultiCellCollectionViewCell.m in Sources */,
 				233850582376902E002F0F27 /* BaseViewController.m in Sources */,
 				2338504D23768DFF002F0F27 /* View+MASAdditions.m in Sources */,
+				23B6FB142377DAFC004772A5 /* NestedCollectionViewController.m in Sources */,
 				2338504A23768DFF002F0F27 /* MASConstraintMaker.m in Sources */,
 				2338504E23768DFF002F0F27 /* MASConstraint.m in Sources */,
 				2338504723768DFF002F0F27 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
