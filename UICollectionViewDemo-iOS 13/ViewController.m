@@ -33,9 +33,12 @@
         @{@"sectionTitle": @"Decoration view(装饰视图)", @"classes": @[
             @{@"title": @"decoration background", @"class": @"DecorateViewController"},
         ]},
-        @{@"sectionTitle": @"复杂视图", @"classes": @[
+        @{@"sectionTitle": @"Nested View(嵌套视图)", @"classes": @[
             @{@"title": @"Nested group", @"class": @"NestedGroupViewController"},
             @{@"title": @"Nested Collection View", @"class": @"NestedCollectionViewController"},
+        ]},
+        @{@"sectionTitle": @"综合Demo", @"classes": @[
+            @{@"title": @"相册", @"class": @"AlbumDetailViewController"},
         ]},
     ];
     [self setupUI];

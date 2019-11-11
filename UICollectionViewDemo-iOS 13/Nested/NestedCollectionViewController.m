@@ -43,14 +43,14 @@
         // 1.item
         NSCollectionLayoutSize *itemSize = [self getItemSizeWithSection:section];
         NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSize];
-        item.contentInsets = NSDirectionalEdgeInsetsMake(8, 8, 8, 8);
+        item.contentInsets = NSDirectionalEdgeInsetsMake(4, 4, 4, 4);
         // 2.group
         NSCollectionLayoutSize *groupSize = [self getGroupSizeWithSection:section];
         NSCollectionLayoutGroup *group = [NSCollectionLayoutGroup horizontalGroupWithLayoutSize:groupSize subitems:@[item]];
         // 3.section
         NSCollectionLayoutSection *layoutSection = [NSCollectionLayoutSection sectionWithGroup:group];
         layoutSection.orthogonalScrollingBehavior = section == 2 ? UICollectionLayoutSectionOrthogonalScrollingBehaviorNone : UICollectionLayoutSectionOrthogonalScrollingBehaviorGroupPaging;
-        layoutSection.contentInsets = NSDirectionalEdgeInsetsMake(8, 8, 8, 8);
+        layoutSection.contentInsets = NSDirectionalEdgeInsetsMake(4, 4, 4, 4);
         
         return layoutSection;
     }];

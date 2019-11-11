@@ -37,20 +37,19 @@
 
 - (UICollectionViewLayout *)generateLayout {
     // 1.trailing Item
-    NSCollectionLayoutSize *trailingItemSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension fractionalHeightDimension:1.0]];
+    NSCollectionLayoutSize *trailingItemSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension fractionalHeightDimension:0.5]];
     NSCollectionLayoutItem *trailingItem = [NSCollectionLayoutItem itemWithLayoutSize:trailingItemSize];
-//    trailingItem.contentInsets = NSDirectionalEdgeInsetsMake(0, 0, 8, 0);
+    trailingItem.contentInsets = NSDirectionalEdgeInsetsMake(4, 4, 4, 4);
     // 2.trailing Group
     NSCollectionLayoutSize *trailingGroupSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:0.5] heightDimension:[NSCollectionLayoutDimension fractionalHeightDimension:1.0]];
     NSCollectionLayoutGroup *trailingGroup = [NSCollectionLayoutGroup verticalGroupWithLayoutSize:trailingGroupSize subitem:trailingItem count:2];
-    trailingGroup.contentInsets = NSDirectionalEdgeInsetsMake(0, 8, 0, 0);
     // 3.leading Item
     NSCollectionLayoutSize *leadingItemSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:0.5] heightDimension:[NSCollectionLayoutDimension fractionalHeightDimension:1.0]];
     NSCollectionLayoutItem *leadingItem = [NSCollectionLayoutItem itemWithLayoutSize:leadingItemSize];
+    leadingItem.contentInsets = NSDirectionalEdgeInsetsMake(4, 4, 4, 4);
     // 4.container group
     NSCollectionLayoutSize *groupSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:200.0]];
     NSCollectionLayoutGroup *group = [NSCollectionLayoutGroup horizontalGroupWithLayoutSize:groupSize subitems:@[leadingItem, trailingGroup]];
-    group.contentInsets = NSDirectionalEdgeInsetsMake(8, 8, 8, 8);
     // 5.section
     NSCollectionLayoutSection *section = [NSCollectionLayoutSection sectionWithGroup:group];
     // 5.layout
