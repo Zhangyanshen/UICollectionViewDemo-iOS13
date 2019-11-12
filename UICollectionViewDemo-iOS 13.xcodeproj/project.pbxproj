@@ -63,6 +63,13 @@
 		23A45CA223790F5C0064F89D /* UIImage+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45C8F23790F5C0064F89D /* UIImage+YYWebImage.m */; };
 		23A45CA323790F5C0064F89D /* CALayer+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45C9023790F5C0064F89D /* CALayer+YYWebImage.m */; };
 		23A45CA423790F5C0064F89D /* YYWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45C9223790F5C0064F89D /* YYWebImageOperation.m */; };
+		23A45E1E237A561E0064F89D /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45E1D237A561E0064F89D /* AlbumsViewController.m */; };
+		23A45E70237A588E0064F89D /* Album1CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45E6E237A588E0064F89D /* Album1CollectionViewCell.m */; };
+		23A45E71237A588E0064F89D /* Album1CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A45E6F237A588E0064F89D /* Album1CollectionViewCell.xib */; };
+		23A45E75237A595A0064F89D /* Album2CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45E73237A595A0064F89D /* Album2CollectionViewCell.m */; };
+		23A45E76237A595A0064F89D /* Album2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A45E74237A595A0064F89D /* Album2CollectionViewCell.xib */; };
+		23A45E7A237A600B0064F89D /* AlbumHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A45E78237A600B0064F89D /* AlbumHeaderCollectionReusableView.m */; };
+		23A45E7B237A600B0064F89D /* AlbumHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A45E79237A600B0064F89D /* AlbumHeaderCollectionReusableView.xib */; };
 		23B6FB142377DAFC004772A5 /* NestedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B6FB132377DAFC004772A5 /* NestedCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -177,6 +184,17 @@
 		23A45C9023790F5C0064F89D /* CALayer+YYWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YYWebImage.m"; sourceTree = "<group>"; };
 		23A45C9123790F5C0064F89D /* YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWebImage.h; sourceTree = "<group>"; };
 		23A45C9223790F5C0064F89D /* YYWebImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWebImageOperation.m; sourceTree = "<group>"; };
+		23A45E1C237A561E0064F89D /* AlbumsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
+		23A45E1D237A561E0064F89D /* AlbumsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
+		23A45E6D237A588E0064F89D /* Album1CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album1CollectionViewCell.h; sourceTree = "<group>"; };
+		23A45E6E237A588E0064F89D /* Album1CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album1CollectionViewCell.m; sourceTree = "<group>"; };
+		23A45E6F237A588E0064F89D /* Album1CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Album1CollectionViewCell.xib; sourceTree = "<group>"; };
+		23A45E72237A595A0064F89D /* Album2CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album2CollectionViewCell.h; sourceTree = "<group>"; };
+		23A45E73237A595A0064F89D /* Album2CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album2CollectionViewCell.m; sourceTree = "<group>"; };
+		23A45E74237A595A0064F89D /* Album2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Album2CollectionViewCell.xib; sourceTree = "<group>"; };
+		23A45E77237A600B0064F89D /* AlbumHeaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		23A45E78237A600B0064F89D /* AlbumHeaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		23A45E79237A600B0064F89D /* AlbumHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		23B6FB122377DAFC004772A5 /* NestedCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedCollectionViewController.h; sourceTree = "<group>"; };
 		23B6FB132377DAFC004772A5 /* NestedCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -358,6 +376,17 @@
 				23A45C6523790DFC0064F89D /* PhotoItemCollectionViewCell.h */,
 				23A45C6623790DFC0064F89D /* PhotoItemCollectionViewCell.m */,
 				23A45C6723790DFC0064F89D /* PhotoItemCollectionViewCell.xib */,
+				23A45E1C237A561E0064F89D /* AlbumsViewController.h */,
+				23A45E1D237A561E0064F89D /* AlbumsViewController.m */,
+				23A45E6D237A588E0064F89D /* Album1CollectionViewCell.h */,
+				23A45E6E237A588E0064F89D /* Album1CollectionViewCell.m */,
+				23A45E6F237A588E0064F89D /* Album1CollectionViewCell.xib */,
+				23A45E72237A595A0064F89D /* Album2CollectionViewCell.h */,
+				23A45E73237A595A0064F89D /* Album2CollectionViewCell.m */,
+				23A45E74237A595A0064F89D /* Album2CollectionViewCell.xib */,
+				23A45E77237A600B0064F89D /* AlbumHeaderCollectionReusableView.h */,
+				23A45E78237A600B0064F89D /* AlbumHeaderCollectionReusableView.m */,
+				23A45E79237A600B0064F89D /* AlbumHeaderCollectionReusableView.xib */,
 			);
 			path = Album;
 			sourceTree = "<group>";
@@ -491,6 +520,9 @@
 				232621942377B01E00104B57 /* HeaderFooterCollectionReusableView.xib in Resources */,
 				2338505D237694E3002F0F27 /* SimpleListCollectionViewCell.xib in Resources */,
 				233850232376707C002F0F27 /* LaunchScreen.storyboard in Resources */,
+				23A45E76237A595A0064F89D /* Album2CollectionViewCell.xib in Resources */,
+				23A45E71237A588E0064F89D /* Album1CollectionViewCell.xib in Resources */,
+				23A45E7B237A600B0064F89D /* AlbumHeaderCollectionReusableView.xib in Resources */,
 				23250DB32377BC1400BDBC60 /* DecorateCollectionReusableView.xib in Resources */,
 				233850202376707C002F0F27 /* Assets.xcassets in Resources */,
 				2338506923769BD2002F0F27 /* MultiCellCollectionViewCell.xib in Resources */,
@@ -521,6 +553,7 @@
 				2338505423768F86002F0F27 /* SimpleListViewController.m in Sources */,
 				23A45CA223790F5C0064F89D /* UIImage+YYWebImage.m in Sources */,
 				2338501B2376707A002F0F27 /* ViewController.m in Sources */,
+				23A45E75237A595A0064F89D /* Album2CollectionViewCell.m in Sources */,
 				23A45C9823790F5C0064F89D /* YYWebImageManager.m in Sources */,
 				23A45CA323790F5C0064F89D /* CALayer+YYWebImage.m in Sources */,
 				233850152376707A002F0F27 /* AppDelegate.m in Sources */,
@@ -535,6 +568,7 @@
 				23250DB22377BC1400BDBC60 /* DecorateCollectionReusableView.m in Sources */,
 				23A45C9623790F5C0064F89D /* YYKVStorage.m in Sources */,
 				233850752376B277002F0F27 /* BadgeCollectionReusableView.m in Sources */,
+				23A45E1E237A561E0064F89D /* AlbumsViewController.m in Sources */,
 				2338507923790D6D002F0F27 /* AlbumDetailViewController.m in Sources */,
 				2338504923768DFF002F0F27 /* MASCompositeConstraint.m in Sources */,
 				233850262376707C002F0F27 /* main.m in Sources */,
@@ -545,6 +579,8 @@
 				23A45C9423790F5C0064F89D /* YYDiskCache.m in Sources */,
 				2338504A23768DFF002F0F27 /* MASConstraintMaker.m in Sources */,
 				23A45C9E23790F5C0064F89D /* _YYWebImageSetter.m in Sources */,
+				23A45E70237A588E0064F89D /* Album1CollectionViewCell.m in Sources */,
+				23A45E7A237A600B0064F89D /* AlbumHeaderCollectionReusableView.m in Sources */,
 				23A45C9D23790F5C0064F89D /* YYAnimatedImageView.m in Sources */,
 				2338504E23768DFF002F0F27 /* MASConstraint.m in Sources */,
 				23A45CA023790F5C0064F89D /* UIImageView+YYWebImage.m in Sources */,

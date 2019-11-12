@@ -38,7 +38,7 @@
             @{@"title": @"Nested Collection View", @"class": @"NestedCollectionViewController"},
         ]},
         @{@"sectionTitle": @"综合Demo", @"classes": @[
-            @{@"title": @"相册", @"class": @"AlbumDetailViewController"},
+            @{@"title": @"相册", @"class": @"AlbumsViewController"},
         ]},
     ];
     [self setupUI];
